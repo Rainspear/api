@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{1b184bc3-2469-461b-b7f5-ca33bda801be}</ProjectGuid>
+        <ProjectHome>.</ProjectHome>
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>server.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="package-lock.json" />
+        <Content Include="package.json" />
+        <Content Include="app.js" />
+        <Content Include="server.js" />
+        <Content Include="api\controllers\orderController.js" />
+        <Content Include="api\controllers\productController.js" />
+        <Content Include="api\controllers\userController.js" />
+        <Content Include="api\middleware\check-auth.js" />
+        <Content Include="api\models\order.js" />
+        <Content Include="api\models\product.js" />
+        <Content Include="api\models\user.js" />
+        <Content Include="api\routes\home.js" />
+        <Content Include="api\routes\order.js" />
+        <Content Include="api\routes\product.js" />
+        <Content Include="api\routes\user.js" />
+        <Content Include="api\views\home.ejs" />
+        <Content Include="public\lib\babel.min.js" />
+        <Content Include="public\lib\react-dom.js" />
+        <Content Include="public\lib\react-dom.min.js" />
+        <Content Include="public\lib\react.js" />
+        <Content Include="public\lib\react.min.js" />
+        <Content Include="public\react\react.js" />
+        <Content Include="public\stylesheet\styles.css" />
+        <Content Include="public\images\uploads\2018-10-20T16-34-21.857Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-20T16-34-43.209Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-20T16-37-05.138Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-20T17-30-46.809Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T04-00-29.885Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-07-59.218Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-08-19.901Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-09-24.420Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-10-02.060Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-14-00.131Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-14-10.818Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-22-03.676Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-23-53.769Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-25-01.989Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-31-25.606Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-33-26.643Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-34-30.406Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-40-05.830Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-40-51.536Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-48-15.154Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-48-37.979Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-50-24.441Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-51-12.946Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-51-48.905Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-53-46.919Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T18-58-59.571Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T19-00-13.690Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T19-03-44.680Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T19-13-01.794Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T19-15-11.868Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T19-16-44.138Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T20-18-38.963Z.jpg" />
+        <Content Include="public\images\uploads\2018-10-25T20-19-20.166Z.jpg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="api" />
+        <Folder Include="api\controllers" />
+        <Folder Include="api\middleware" />
+        <Folder Include="api\models" />
+        <Folder Include="api\routes" />
+        <Folder Include="api\views" />
+        <Folder Include="public" />
+        <Folder Include="public\images" />
+        <Folder Include="public\images\uploads" />
+        <Folder Include="public\lib" />
+        <Folder Include="public\react" />
+        <Folder Include="public\stylesheet" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+    <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
