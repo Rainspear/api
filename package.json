@@ -21,7 +21,9 @@
     "nodemon": "^1.18.4",
     "validator": "^10.8.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "event-stream": "^3.3.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"

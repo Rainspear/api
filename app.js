@@ -9,11 +9,11 @@ const mongoose = require("mongoose");
 const routeProduct = require('./api/routes/product');
 const routeOrder = require('./api/routes/order');
 const cookieParser = require('cookie-parser');
-require ('custom-env').env('staging')
+require ('custom-env').env('staging');
 //mongoose.connect("mongodb://localhost/myUser", { useNewUrlParser: true, useCreateIndex: true, });
 const mlab = process.env.MLAB;
 
-mongoose.connect(mlab, { useNewUrlParser: true, useCreateIndex: true});
+mongoose.connect(     mlab, { useNewUrlParser: true, useCreateIndex: true}  );
 
 var db = mongoose.connection;
 
@@ -66,7 +66,3 @@ app.use((error,req,res,next) => {
 });
 
 module.exports = app;
-
-
-
-
