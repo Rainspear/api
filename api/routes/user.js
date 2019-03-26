@@ -41,9 +41,9 @@ router.get('/', checkAuth, UserController.user_get_all);
 
 router.get('/:userId', checkAuth, UserController.user_get_one);
 
-router.get('/forget_password/:email', UserController.user_forget_password);
+//router.get('/forget_password/:email', UserController.user_forget_password);
 
-router.post('/reset_password/:email/:resetToken', checkAuthResetPassword, UserController.user_reset_password);
+//router.post('/reset_password/:email/:resetToken', checkAuthResetPassword, UserController.user_reset_password);
 
 router.post('/sign_up', upload.single('userAvatar'), UserController.user_register);
 
